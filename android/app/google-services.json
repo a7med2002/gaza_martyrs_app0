@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "559171186326",
+    "project_id": "gaza-martyer-app",
+    "storage_bucket": "gaza-martyer-app.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:559171186326:android:be54c1d02f0d3bdc551cb7",
+        "android_client_info": {
+          "package_name": "com.example.gaza_martyer_app"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCsZwR3zh1JujvYFTOkUZm-d-Cq_IC1RIU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
