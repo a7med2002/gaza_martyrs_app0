@@ -71,6 +71,8 @@ class SplashController extends GetxController
       Get.offAllNamed("/mainScreen");
     } else if (!isMobile() && role == "admin") {
       Get.offAllNamed("/adminDahsboard");
+    } else if (!isMobile() && role == "sub-admin") {
+      Get.offAllNamed("/subAddStories");
     } else {
       await FirebaseAuth.instance.signOut();
       isMobile() ? Get.offAllNamed("/login1") : Get.offAllNamed("/adminLogin");

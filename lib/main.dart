@@ -13,6 +13,7 @@ import 'package:gaza_martyer_app/screens/Admin/Pages/Add%20Stories/add_stories.d
 import 'package:gaza_martyer_app/screens/Admin/Pages/Auth/admin_forget_password.dart';
 import 'package:gaza_martyer_app/screens/Admin/Pages/Auth/admin_login.dart';
 import 'package:gaza_martyer_app/screens/Admin/admin_dashboard.dart';
+import 'package:gaza_martyer_app/screens/Sub%20Admin/sub_add_stories.dart';
 import 'package:gaza_martyer_app/screens/User/Home/home.dart';
 import 'package:gaza_martyer_app/screens/User/Notifications/user_notification.dart';
 import 'package:gaza_martyer_app/screens/User/OnBoarding/on_boarding_screen.dart';
@@ -76,6 +77,10 @@ class MyApp extends StatelessWidget {
             GetPage(
                 name: "/adminDahsboard",
                 page: () => AdminDashboard(),
+                transition: Transition.downToUp),
+            GetPage(
+                name: "/subAddStories",
+                page: () => SubAddStories(),
                 transition: Transition.downToUp),
             GetPage(
                 name: "/adminAddStory",

@@ -417,7 +417,8 @@ class AuthController extends GetxController {
         return;
       }
       // check if ==> Admin Or Not !!
-      if (userDoc.exists && userDoc.data()!["role"] != "admin") {
+      if (userDoc.exists && userDoc.data()!["role"] != "admin" &&
+          userDoc.exists && userDoc.data()!["role"] != "sub-admin") {
         Get.snackbar(
           "Access Denied".tr,
           "You are not an admin".tr,
@@ -434,7 +435,12 @@ class AuthController extends GetxController {
       });
       saveFcmTokenForCurrentUser(userId);
 
-      Get.offAllNamed("/adminDahsboard");
+      // check if is A Sub-Admin
+      if (userDoc.exists && userDoc.data()!["role"] == "sub-admin") {
+        Get.offAllNamed("/subAddStories");
+      } else {
+        Get.offAllNamed("/adminDahsboard");
+      }
 
       isLoading.value = false;
     } on FirebaseAuthException catch (e) {
@@ -521,60 +527,3 @@ class AuthController extends GetxController {
     }
   }
 }
-
-
-  // Future<UserCredential> signInWithGoogle() async {
-  //   isLoading.value = true;
-  //   // ⭐️ Force sign out to always show account picker
-  //   await GoogleSignIn().signOut();
-
-  //   // Step 1: Start sign-in flow
-  //   final GoogleSignInAccount? googleUser = await GoogleSignIn().signIn();
-  //   if (googleUser == null) throw Exception("User cancelled sign in");
-
-  //   final GoogleSignInAuthentication googleAuth =
-  //       await googleUser.authentication;
-
-  //   // Step 2: Create credential and sign in
-  //   final credential = GoogleAuthProvider.credential(
-  //     accessToken: googleAuth.accessToken,
-  //     idToken: googleAuth.idToken,
-  //   );
-
-  //   final userCredential = await auth.signInWithCredential(credential);
-  //   final user = auth.currentUser;
-
-  //   // Step 3: Check if user exists in Firestore
-  //   final doc = await db.collection("users").doc(user!.uid).get();
-
-  //   if (!doc.exists) {
-  //     // Step 4: Add to Firestore if not found
-  //     await initialUser(
-  //         googleUser.displayName ?? "No Name", googleUser.email, "google");
-  //   }
-  //   final userId = auth.currentUser!.uid;
-
-  //   // check if account is disabled
-  //   final userDoc = await db.collection("users").doc(userId).get();
-  //   if (userDoc.exists && userDoc.data()!["status"] == "disabled") {
-  //     Get.snackbar(
-  //       "Account Disabled".tr,
-  //       "Your account has been disabled by the admin.".tr,
-  //       snackPosition: SnackPosition.TOP,
-  //       duration: const Duration(seconds: 3),
-  //     );
-  //     await auth.signOut();
-  //     isLoading.value = false;
-  //   }
-  //   // Update Login Date
-  //   await db.collection("users").doc(userId).update({
-  //     "loginDate": DateTime.now(),
-  //   });
-  //   await fMsg.subscribeToTopic('all');
-  //   saveFcmTokenForCurrentUser(userId);
-  //   // Step 5: Navigate to home
-  //   Get.offAllNamed("/mainScreen");
-  //   isLoading.value = false;
-
-  //   return userCredential;
-  // }
