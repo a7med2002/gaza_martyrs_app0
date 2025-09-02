@@ -91,6 +91,7 @@ class NotificationController extends GetxController {
                 'This channel is used for important notifications.',
             importance: Importance.high,
             priority: Priority.high,
+            playSound: true,
             icon: 'ic_notification_white',
             // icon: '@mipmap/ic_launcher',
           ),

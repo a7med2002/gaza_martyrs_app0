@@ -5,9 +5,11 @@ import 'package:flutter/material.dart';
 import 'package:gaza_martyer_app/controllers/Admin/network_controller.dart';
 import 'package:gaza_martyer_app/controllers/Admin/notification_controller.dart';
 import 'package:gaza_martyer_app/controllers/Admin/theme_controller.dart';
+import 'package:gaza_martyer_app/controllers/User/update_controller.dart';
 import 'package:gaza_martyer_app/firebase_options.dart';
 import 'package:gaza_martyer_app/locale/locale.dart';
 import 'package:gaza_martyer_app/locale/locale_controller.dart';
+import 'package:gaza_martyer_app/screens/Admin/Pages/Add%20Stories/add_stories.dart';
 import 'package:gaza_martyer_app/screens/Admin/Pages/Auth/admin_forget_password.dart';
 import 'package:gaza_martyer_app/screens/Admin/Pages/Auth/admin_login.dart';
 import 'package:gaza_martyer_app/screens/Admin/admin_dashboard.dart';
@@ -45,6 +47,7 @@ void main() async {
     FirebaseMessaging.onBackgroundMessage(firebaseMessagingBackgroundHandler);
     Get.put(NetworkController());
     Get.put(NotificationController());
+    Get.put(UpdateController());
   }
   runApp(const MyApp());
 }
@@ -73,6 +76,10 @@ class MyApp extends StatelessWidget {
             GetPage(
                 name: "/adminDahsboard",
                 page: () => AdminDashboard(),
+                transition: Transition.downToUp),
+            GetPage(
+                name: "/adminAddStory",
+                page: () => AddStories(),
                 transition: Transition.downToUp),
             GetPage(
                 name: "/adminLogin",

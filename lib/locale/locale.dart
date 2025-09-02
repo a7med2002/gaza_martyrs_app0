@@ -471,7 +471,10 @@ class MyLocale extends Translations {
               "Because they are not just numbers, we document here the names and photos of Gaza Holocaust martyrs",
           "onBoarding3Title": "Discover the Martyrs",
           "onBoarding3SubTitle":
-              "Browse the stories of the martyrs,\nand submit the story of your martyr now.."
+              "Browse the stories of the martyrs,\nand submit the story of your martyr now..",
+          "New update available" : "New update available",
+          "later" : "later",
+          "Update" : "Update"
         },
         'ar': {
           "login": "تسجيل الدخول",
@@ -941,7 +944,9 @@ class MyLocale extends Translations {
           "onBoarding2SubTitle":
               "لأنهم ليسوا أرقامًا، نوثق هنا أسماء وصور شهداء محرقة غزة",
           "onBoarding3Title": "تعرّف على الشهداء",
-          "onBoarding3SubTitle": "تصفح قصص الشهداء،\nوأرسل قصة شهيدك الان .."
-        }
+          "onBoarding3SubTitle": "تصفح قصص الشهداء،\nوأرسل قصة شهيدك الان ..",
+          "New update available" : "تحديث جديد متاح",
+          "later" : "لاحقًا",
+          "Update" : "تحديث"        }
       };
 }

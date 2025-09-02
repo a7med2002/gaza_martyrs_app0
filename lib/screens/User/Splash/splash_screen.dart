@@ -1,5 +1,8 @@
+import 'dart:io';
+
 import 'package:flutter/material.dart';
 import 'package:gaza_martyer_app/controllers/User/splash_controller.dart';
+import 'package:gaza_martyer_app/controllers/User/update_controller.dart';
 import 'package:get/get.dart';
 
 class SplashScreen extends StatelessWidget {
@@ -7,7 +10,7 @@ class SplashScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final splashController = Get.put(SplashController());
+    final splashController = Get.put(SplashController());    
     return Scaffold(
         backgroundColor: Colors.black,
         body: Center(

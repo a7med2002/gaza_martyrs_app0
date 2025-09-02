@@ -151,7 +151,9 @@ class AdminController extends GetxController {
         "android": {
           "notification": {
             "click_action": "FLUTTER_NOTIFICATION_CLICK",
-            "icon": "ic_notification_white"
+            "icon": "ic_notification_white",
+            "channel_id": "high_importance_channel",
+            "sound": "default"
           },
         },
         "apns": {
@@ -278,6 +280,8 @@ class AdminController extends GetxController {
               "notification": {
                 "click_action": "FLUTTER_NOTIFICATION_CLICK",
                 "icon": "ic_notification_white",
+                "channel_id": "high_importance_channel",
+                "sound": "default"
               }
             },
             "data": {

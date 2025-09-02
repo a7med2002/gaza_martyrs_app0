@@ -433,7 +433,9 @@ class AuthController extends GetxController {
         "loginDate": DateTime.now(),
       });
       saveFcmTokenForCurrentUser(userId);
+
       Get.offAllNamed("/adminDahsboard");
+
       isLoading.value = false;
     } on FirebaseAuthException catch (e) {
       if (e.code == 'user-not-found') {

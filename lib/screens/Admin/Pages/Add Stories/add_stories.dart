@@ -42,8 +42,8 @@ class AddStories extends StatelessWidget {
                             Theme.of(context).colorScheme.secondary,
                         indicatorColor: Theme.of(context).colorScheme.primary,
                         dividerColor: Colors.transparent,
-                        labelStyle:
-                            TextStyle(fontSize: 24, fontWeight: FontWeight.bold),
+                        labelStyle: TextStyle(
+                            fontSize: 24, fontWeight: FontWeight.bold),
                         tabs: [
                           Tab(text: "addMartyer".tr),
                           Tab(text: "addMassacres".tr),
