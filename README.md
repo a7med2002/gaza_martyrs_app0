@@ -1,16 +1,78 @@
-# gaza_martyer_app
+# 🕊️ Gaza Martyrs App
 
-A new Flutter project.
+> 🇵🇸 A cross-platform Flutter application to honor and preserve the stories of Gaza’s martyrs — combining beauty, performance, and purpose.
 
-## Getting Started
+---
 
-This project is a starting point for a Flutter application.
+## 📖 Project Overview
 
-A few resources to get you started if this is your first Flutter project:
+**Gaza Martyrs App** provides:
+- 🧍‍♂️ A **user-friendly mobile interface** to browse, search, and read stories about martyrs.
+- 🖥️ A **web/desktop admin panel** to manage stories, users, reports, and notifications.
+- ☁️ A **Firebase-powered backend** with authentication, real-time data, and push notifications.
+- 🖼️ **Cloudinary integration** for image uploads.
+- 🌍 **Multilingual** and **responsive design** across devices.
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+---
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+## 🧩 Tech Stack
+
+| Category | Technologies |
+|-----------|---------------|
+| **Framework** | Flutter (Dart SDK ^3.6.0) |
+| **State Management** | GetX |
+| **Backend Services** | Firebase (Auth, Firestore, Messaging) |
+| **Cloud Storage** | Cloudinary |
+| **UI/UX** | Flutter SVG, Google Fonts, Custom Themes |
+| **Others** | Shared Preferences, Connectivity Plus, HTTP, UUID, JWT, FL Chart |
+
+---
+
+## 🏗️ Architecture
+
+**Clean MVC-inspired architecture** with:
+- 🧠 **Controllers:** Under `lib/controllers/` using GetX for state and logic management.
+- 💾 **Services:** Firebase & Cloudinary integrations for authentication, data, and images.
+- 🎨 **UI Layer:** Screens and widgets organized under `lib/screens/` and `lib/components/`.
+- ⚙️ **Configuration:** Firebase setup via `lib/firebase_options.dart` and environment configs.
+- 🔔 **Notifications:** Firebase Cloud Messaging (FCM) and local notifications system.
+
+---
+
+## ✨ Features
+
+
+### 👥 User Features
+- 🚀 Splash & onboarding screens  
+- 🔐 Login / Sign-up / Password reset  
+- 🏠 Home feed with martyrs’ cards (photo, name, city, date)  
+- ❤️ Add / remove favorites  
+- 🔍 Smart search and filters  
+- 🕯️ Story detail view  
+- 🔔 Notifications center  
+- 🌐 Multilingual and dark mode  
+
+### 🛠️ Admin Features
+- 📊 Dashboard overview  
+- 📚 Manage stories, users, reports, static pages  
+- 📢 Send push notifications (to all or specific tokens)  
+- 🖼️ Cloudinary-based image upload  
+- 🧾 In-app version management  
+
+---
+
+## 🖼️ Screenshots
+
+![app_view1](assets/cover/view1.png)
+
+![app_view2](assets/cover/view2.png)
+
+![app_view3](assets/cover/view3.png)
+
+---
+
+## 🌐 Social Links
+
+- 👨‍💻 Developer: [ِAhmed Meqdad]
+- 📧 Email: [ahmd2002mqdad@gamil.com]
+- 💼 LinkedIn: [linkedin.com/in/ahmed-meqdad](https://www.linkedin.com/in/ahmed-meqdad)

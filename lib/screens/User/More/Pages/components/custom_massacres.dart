@@ -115,7 +115,7 @@ class CustomMassacres extends StatelessWidget {
                                 color: Theme.of(context).colorScheme.primary),
                             SizedBox(height: 8),
                             Text(
-                              location,
+                              location.tr,
                               style: TextStyle(
                                   color:
                                       Theme.of(context).colorScheme.secondary,

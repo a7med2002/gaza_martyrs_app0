@@ -472,9 +472,9 @@ class MyLocale extends Translations {
           "onBoarding3Title": "Discover the Martyrs",
           "onBoarding3SubTitle":
               "Browse the stories of the martyrs,\nand submit the story of your martyr now..",
-          "New update available" : "New update available",
-          "later" : "later",
-          "Update" : "Update"
+          "New update available": "New update available",
+          "later": "later",
+          "Update": "Update"
         },
         'ar': {
           "login": "تسجيل الدخول",
@@ -690,15 +690,15 @@ class MyLocale extends Translations {
           "Khanyunis": "خانيونس",
           "Rafah": "رفح",
           "martyerJob": "المهنة",
-          "martyerPhoto": "الصورة",
+          "martyerPhoto": "صورة الشهيد",
           "putAPicture": "أضف صورة",
           "uploded": "تم التحميل",
           "martyerStory": "قصة الشهيد",
           "beforeSubmitCondition":
-              "لنشر قصة بنجاح، اقرأ الشروط والأحكام لتتعرف على قواعدنا قبل النشر حتى لا يتم رفض قصتك.",
+              "لنشر القصة بنجاح، اقرأ الشروط والأحكام لتتعرف على قواعدنا قبل النشر حتى لا يتم رفض قصتك.",
           "beforeSubmitCondition2":
-              "عند إرسال طلبك، سيتم مراجعته من قبل فريق العمل، وستتلقى إشعارًا في حال تم القبول أو الرفض.",
-          "Write a story": "اكتب قصة",
+              "عند إرسال قصتك، سيتم مراجعتها من قبل فريق العمل، وستتلقى إشعارًا في حال تم القبول أو الرفض.",
+          "Write a story": "اكتب قصة، نبذة ..",
           "males": "الذكور",
           "females": "الإناث",
           "children": "الأطفال",
@@ -945,8 +945,9 @@ class MyLocale extends Translations {
               "لأنهم ليسوا أرقامًا، نوثق هنا أسماء وصور شهداء محرقة غزة",
           "onBoarding3Title": "تعرّف على الشهداء",
           "onBoarding3SubTitle": "تصفح قصص الشهداء،\nوأرسل قصة شهيدك الان ..",
-          "New update available" : "تحديث جديد متاح",
-          "later" : "لاحقًا",
-          "Update" : "تحديث"        }
+          "New update available": "تحديث جديد متاح",
+          "later": "لاحقًا",
+          "Update": "تحديث"
+        }
       };
 }
