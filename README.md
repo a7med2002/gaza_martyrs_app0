@@ -71,6 +71,14 @@
 
 ---
 
+## 📦 Download APK  
+
+You can download the latest version of the **Gaza Martyrs App App** APK directly from Google Drive:  
+
+👉 [**Download Gaza Martyrs App (APK)**](https://drive.google.com/file/d/15FgunylEMeRZW9CiJ8qwhOugAEZ-6OGh/view?usp=sharing)  
+
+---
+
 ## 🌐 Social Links
 
 - 👨‍💻 Developer: [ِAhmed Meqdad]
